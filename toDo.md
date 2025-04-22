@@ -1,0 +1,5 @@
+- Altere cores, padronize medidas e melhore o aspecto visual do blog feito em sala;
+- Pesquisem e adicionem responsividade ao leiaute em colunas;
+- Identifiquem os membros no rodapé do blog;
+- Hospedem a versão final no githubpages;
+- Apenas um dos membros deve responder a atividade;
