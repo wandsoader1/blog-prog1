@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog do ADS</title>
+    <link rel="stylesheet" href="./post_style.css">
+    <!-- <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon"> -->
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav class="header_nav_container">
+                <div class="header_nav_logo">
+                    <a href="#"><img src="../imagens/ads.png" alt="ads logo"></a>
+                </div>
+                <h2>Blog do ADS</h2>
+                <div class="header_nav_links">
+                    <a href="#">Home</a>
+                    <a href="#">Sobre</a>
+                    <a href="#">Contato</a>
+                    <a id="login_link" href="#">Login</a>
+                    <a id="create_acount_link" href="#">Criar Conta</a>
+                </div>
+            </nav>
+        </header>
+        <div class="flex_leiaut_container">
+            <div class="flex_capa"></div>
+            <div class="flex_leiaut">
+                <main>
+                    <article>
+                      <h3>Campos mais Modernos</h3>
+                    <p class="autor_data">07/04/2025 - por Ely Miranda </p>
+                    <form action="" class="formulario" method="post">
+                        <label for="email">E-mail: </label>
+                        <input type="email" id="email" name="email" required>
+                        <br>
+                        <label for="cor">Cor: </label>
+                        <input type="color" id="cor" name="cor" value="#ff0000">
+                        <br>
+                        <label for="data">Data: </label>
+                        <input type="date" id="data" name="data" value="" required>
+                        <br>
+                        <label for="hora">Hora: </label>
+                        <input type="time" id="hora" name="hora" value="" required>
+                        <br>
+                        <label for="nota">Nota: </label>
+                        <input type="range" id="nota" name="hora" min="0" max="10" value="5" required>
+                        <div id="nota-atual"></div>
+                        <br>
+                        <label for="idade">Idade: </label>
+                        <input type="number" id="idade" name="idade" min="0" max="120" value="18" required>
+                        <div id="nota-atual"></div>
+                        <br>
+                        <input type="submit" value="Validar">
+                    </form>
+
+                    <script>
+                        function mudaNota() {
+                            let nota = document.getElementById('nota').value;
+                            document.getElementById('nota-atual').innerText = nota;
+                        }
+
+                        document.getElementById('nota').addEventListener('change', mudaNota);
+                        mudaNota();
+                    </script>
+                </article>
+              </main>
+                    <aside>
+                            <h3>Postagens</h3>
+                                <ul>
+                                    <li><a href="../blog.html">Box Model</a></li>
+                                    <li><a href="#campos-modernos">Campos Modernos</a></li>
+                                    <li><a href="#buscas">Formulários de Busca</a></li>
+                                    <li><a href="#tabelas">Tabelas</a></li>
+                                    <li><a href="#listas">Listas</a></li>
+                                    <li><a href="#espacamentos">Espaçamentos</a></li>
+                                    <li><a href="#fontes">Fontes</a></li>
+                                    <li><a href="#cores">Cores</a></li>
+                                    <li><a href="#simbolos">Símbolos</a></li>
+                                    <li><a href="#ifpi">Sobre o IFPI</a></li>
+                                </ul>
+                        </nav>
+                        <h3>Links para Pesquisar</h3>
+                        <ul>
+                            <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">HTML no MDN</a></li>
+                            <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank">CSS no MDN</a></li>
+                            <li><a href="https://www.w3schools.com/html/" target="_blank">Tutorial HTML - W3Schools</a></li>
+                            <li><a href="https://www.w3schools.com/css/" target="_blank">Tutorial CSS - W3Schools</a></li>
+                            <li><a href="https://web.dev/" target="_blank">Boas práticas Web.dev</a></li>
+                            <li><a href="https://css-tricks.com/snippets/css/" target="_blank">CSS Tricks (snippets)</a></li>
+                            <li><a href="https://caniuse.com/" target="_blank">Can I use?</a></li>
+                        </ul>
+                    </aside> 
+            </div>
+        </div>
+        <footer>
+            <p>Blog do ADS &copy; 2025 | Criado por:</p>
+            <p>Luiz David Silva Gomes</p>
+            <p>Wanderson Matheus</p>
+        </footer>

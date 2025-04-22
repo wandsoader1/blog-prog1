@@ -14,7 +14,7 @@
         <header>
             <nav class="header_nav_container">
                 <div class="header_nav_logo">
-                    <img src="./imagens/ads.png" alt="ads logo">
+                    <a href="#"><img src="./imagens/ads.png" alt="ads logo"></a>
                 </div>
                 <h2>Blog do ADS</h2>
                 <div class="header_nav_links">
@@ -30,9 +30,9 @@
             <div class="flex_capa"></div>
             <div class="flex_leiaut">
                 <main>
-                    <article id="box_model">
-                        <p class="autor_data">07/04/2025 - por Ely Miranda</p>
+                    <article>
                         <h2>Box model</h2>
+                        <p class="autor_data">07/04/2025 - por Ely Miranda</p>
                         <p>O box model define uma série de formatações que vão desde:</p>
                         <ul>
                             <li class="bordas">Bordas</li>
@@ -46,10 +46,10 @@
                     </article>
                 </main>
                     <aside>
-                            <h3>Seções</h3>
+                            <h3>Postagens</h3>
                                 <ul>
-                                    <li><a href="#box-model">Box Model</a></li>
-                                    <li><a href="#campos-modernos">Campos Modernos</a></li>
+                                    <li><a href="./blog.html">Box Model</a></li>
+                                    <li><a href="./postagens/campos_modernos.html">Campos Modernos</a></li>
                                     <li><a href="#buscas">Formulários de Busca</a></li>
                                     <li><a href="#tabelas">Tabelas</a></li>
                                     <li><a href="#listas">Listas</a></li>
@@ -74,49 +74,11 @@
             </div>
         </div>
         <footer>
-            <p>Blog do ADS</p>
+            <p>Blog do ADS &copy; 2025 | Criado por:</p>
             <p>Luiz David Silva Gomes</p>
             <p>Wanderson Matheus</p>
-            <p>Todos os direitos reservados &copy;</p>
         </footer>
         <!-- <div id="leiaute-flex">
-                <article id="campos-modernos">
-                    <h2>Campos mais modernos</h2>
-                    <form action="">
-                        <label for="email">E-mail:</label>
-                        <input type="email" id="email" name="email" required>
-                        <br>
-                        <label for="cor">Cor</label>
-                        <input type="color" id="cor" name="cor" value="#ff0000">
-                        <br>
-                        <label for="data">Cor</label>
-                        <input type="date" id="data" name="data" value="" required>
-                        <br>
-                        <label for="hora">Cor</label>
-                        <input type="time" id="hora" name="hora" value="" required>
-                        <br>
-                        <label for="nota">Nota</label>
-                        <input type="range" id="nota" name="hora" min="0" max="10" value="5" required>
-                        <div id="nota-atual"></div>
-                        <br>
-                        <label for="idade">Idade</label>
-                        <input type="number" id="idade" name="idade" min="0" max="120" value="18" required>
-                        <div id="nota-atual"></div>
-                        <br>
-                        <input type="submit" value="Validar">
-
-                    </form>
-                    <script>
-                        function mudaNota() {
-                            let nota = document.getElementById('nota').value;
-                            document.getElementById('nota-atual').innerText = nota;
-                        }
-
-                        document.getElementById('nota').addEventListener('change', mudaNota);
-                        mudaNota();
-                    </script>
-                    <p class="autor-data">07/04/2025 - por Ely Miranda - <a href="#inicio-pagina">&uarr;</a></p>
-                </article>
                 <article>
                     <h2>Formulário clássicos de busca</h2>
                     <p>Busca no google</p>

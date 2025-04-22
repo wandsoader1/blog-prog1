@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&family=Poppins:wght@300&family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  margin: 30px auto;
+  width: 80%;
+  background-color: #fff;
+  color: #252425;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header_nav_container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 0 2rem;
+  letter-spacing: 0.1rem;
+}
+
+.header_nav_container h2 {
+  font-size: 0.9rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.header_nav_logo img {
+  width: 35px;
+  height: 35px;
+  border: 1px solid #000;
+  border-radius: 50%;
+}
+
+.header_nav_links {
+  font-size: 1rem;
+  font-weight: 500;
+  display: flex;
+  gap: 2rem;
+}
+
+.header_nav_links a {
+  color: #252425;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  text-decoration: none !important;
+}
+
+.header_nav_links a:hover {
+  text-decoration: underline !important;
+  text-decoration-thickness: 1px !important;
+  text-decoration-color: #8ce2aa !important;
+}
+
+.header_nav_links a:active {
+  color: #8ce2aa;
+}
+
+#login_link {
+  color: #252425;
+  border: 1px solid #8ce2aa;
+  border-radius: 50%;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+#login_link:hover {
+  background-color: #8ce2aa;
+  color: #fff;
+}
+
+#create_acount_link {
+  background-color: #8ce2aa;
+  color: #252425;
+  border: 1px solid #8ce2aa;
+  border-radius: 50%;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+#create_acount_link:hover {
+  background-color: #7ad399;
+  color: #252425;
+}
+
+.flex_leiaut_container {
+  margin: 1.2rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  padding: 3rem 0;
+}
+
+.flex_capa {
+  background-image: url(../imagens/capa_blog.webp);
+  background-size: cover;
+  background-position: center;
+  /*width: 90%;*/
+  width: 95%;
+  height: 28vh;
+  border-radius: 10px;
+}
+
+.flex_leiaut {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+}
+
+.flex_leiaut h2 {
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+main {
+  color: #252425;
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  /* margin-bottom: 0px; */
+  flex-wrap: wrap;
+}
+
+main h2 {
+  width: 30%;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.formulario {
+  width: 100%;
+  padding: 1.2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+aside {
+  margin-top: 100px;
+  padding: 2rem;
+  border: 1px solid #000;
+  border-radius: 10px;
+  background-color: #252425;
+  color: #e0e0e0;
+}
+
+aside a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 0.9rem;
+}
+
+aside h3 {
+  color: #8ce2aa;
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 1rem 0;
+}
+
+aside a:hover {
+  text-decoration: underline !important;
+  text-decoration-thickness: 1px !important;
+  text-decoration-color: #8ce2aa !important;
+}
+
+main figure img {
+  margin: 20px;
+  width: 90%;
+  height: 90%;
+  border-radius: 10px;
+}
+
+main figure figcaption {
+  align-items: center;
+  font-size: 0.8rem;
+  text-align: center;
+  font-style: italic;
+}
+
+.autor_data {
+  font-size: 0.9rem;
+  text-align: left;
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+footer {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  font-size: 0.8rem;
+  gap: 1rem;
+}
