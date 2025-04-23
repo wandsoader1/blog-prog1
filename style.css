@@ -99,67 +99,81 @@ header {
 
 
 .flex_leiaut_container {
-    margin: 1.2rem auto;
+    margin: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 70%;
+    width: 65%;
     padding: 3rem 0;
 }
 
 .flex_capa {
-    background-image: url(./imagens/capa_blog.webp);
+    background-image: url(./imagens/frontend_bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
     background-position: center;
-    /*width: 90%;*/
-    width: 95%;
-    height: 28vh;
+    width: 100%;
+    height: 20vh;
     border-radius: 10px;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex_capa h2 {
+    color: #e0e0e0;
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: center;
+    padding: 1rem 0;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
 }
 
 .flex_leiaut {
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 1rem;
-}
-
-.flex_leiaut h2 {
-    font-size: 1rem;
-    font-weight: 500;
-    text-transform: uppercase;
+    justify-content: space-between;
+    /* border: 1px solid #000; */
+    margin-top: 6%;
 }
 
 main {
     color: #252425;
-    width: 65%;
+    max-width: 50%;
+    min-width: 65%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
     padding: 2rem;
-    margin-top: 3%;
-}
-
-main h2 {
-    width: 30%;
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-transform: uppercase;
+    /* border: 1px solid #000; */
 }
 
 aside {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+    max-width: 300px;
+    min-width: 200px;
+    max-height: 75vh;
+    min-height: 60vh;
     padding: 2rem;
-    border: 1px solid #000;
     border-radius: 10px;
     background-color: #252425;
     color: #e0e0e0;
 }
 
+aside ul {
+    margin: 10px;
+}
+
 aside a {
-    color: #fff;
+    color: #e0e0e0;
     text-decoration: none;
     transition: color 0.3s ease;
     font-size: 0.9rem;
@@ -170,7 +184,9 @@ aside h3 {
     font-size: 1rem;
     font-weight: 400;
     text-transform: uppercase;
-    padding: 1rem 0;
+    padding: 0.8rem 0;
+    border-bottom: 1px solid #8ce2aa;
+    margin-bottom: 1rem;
 }
 
 aside a:hover {
@@ -202,11 +218,23 @@ aside a:hover {
     margin: 20px;
 }
 
+main figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    width: 100%;
+}
+
 main figure img {
-    margin: 20px;
-    width: 90%;
-    height: 90%;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 700px;
+    min-width: 300px;
+    /* height: auto; */
+    max-height: 615px;
     border-radius: 10px;
+    display: block;
 }
 
 main figure figcaption {
@@ -214,6 +242,15 @@ main figure figcaption {
     font-size: 0.8rem;
     text-align: center;
     font-style: italic;
+    margin-bottom: 100px;
+}
+
+#camposmodernos {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 2rem;
+    /* border: 1px solid #000; */
 }
 
 .autor_data {
@@ -230,6 +267,28 @@ footer {
     justify-content: center;
     font-size: 0.8rem;
     gap: 1rem;
+}
+
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 50px;
+    background-color: #8ce2aa;
+    color: #252425;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#back-to-top:hover {
+    background-color: #7ad399;
 }
 
 /*

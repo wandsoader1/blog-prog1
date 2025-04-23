@@ -16,7 +16,7 @@
                 <div class="header_nav_logo">
                     <a href="#"><img src="./imagens/ads.png" alt="ads logo"></a>
                 </div>
-                <h2>Blog do ADS</h2>
+                <!-- <h2>Blog do ADS</h2> -->
                 <div class="header_nav_links">
                     <a href="#">Home</a>
                     <a href="#">Sobre</a>
@@ -27,11 +27,13 @@
             </nav>
         </header>
         <div class="flex_leiaut_container">
-            <div class="flex_capa"></div>
+            <div class="flex_capa">
+                <h2>Blog do ADS</h2>
+            </div>
             <div class="flex_leiaut">
                 <main>
-                    <article>
-                        <h2>Box model</h2>
+                    <article id="boxmodel">
+                        <h3>Box model</h3>
                         <p class="autor_data">07/04/2025 - por Ely Miranda</p>
                         <p>O box model define uma série de formatações que vão desde:</p>
                         <ul>
@@ -44,12 +46,67 @@
                             <figcaption>Imagem box model</figcaption>
                         </figure>
                     </article>
+
+                    <article id="camposmodernos">
+                        <h3>Campos mais modernos em formulários</h3>
+                        <p class="autor_data">07/04/2025 - por Ely Miranda</p>
+    
+                        <form action="" class="formulario" method="post">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required>
+                        <br>
+                        <label for="senha">Senha:</label>
+                        <input type="password" id="senha" name="senha" required>
+                        <br>
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required>
+                        <br>
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" id="telefone" name="telefone" required>
+                        <br>
+                        <label for="cor">Cor preferida:</label>
+                        <input type="color" id="cor" name="cor" value="#ff0000">
+                        <br>
+                        <label for="data">Data:</label>
+                        <input type="date" id="data" name="data" required>
+                        <br>
+                        <label for="hora">Hora:</label>
+                        <input type="time" id="hora" name="hora" required>
+                        <br>
+                        <label for="busca">Busca:</label>
+                        <input type="search" id="busca" name="busca" placeholder="Digite sua pesquisa" required>
+                        <br>
+                        <label for="nota">Nota (0 a 10):</label>
+                        <input type="range" id="nota" name="nota" min="0" max="10" value="5" required>
+                        <div id="nota-atual">5</div>
+                        <br>
+                        <label for="idade">Idade:</label>
+                        <input type="number" id="idade" name="idade" min="0" max="120" value="18" required>
+                        <br>
+                        <input type="submit" value="Enviar">
+                        </form>
+
+                        <figure>
+                            <img src="./imagens/formularios.png" alt="Imagem representativa de formulários">
+                            <figcaption>Exemplo de formulário com campos modernos (Fonte: MDN Web Docs)</figcaption>
+                        </figure>
+
+                        <script>
+                            function mudaNota() {
+                                const nota = document.getElementById('nota').value;
+                                document.getElementById('nota-atual').innerText = nota;
+                            }
+
+                            document.getElementById('nota').addEventListener('input', mudaNota);
+                            mudaNota();
+                        </script>
+                    </article>
                 </main>
                     <aside>
-                            <h3>Postagens</h3>
+                            <h3>Sections</h3>
                                 <ul>
-                                    <li><a href="./blog.html">Box Model</a></li>
-                                    <li><a href="./postagens/campos_modernos.html">Campos Modernos</a></li>
+                                    <li><a href="#boxmodel">Box Model</a></li>
+                                    <li><a href="#camposmodernos">Campos Modernos</a></li>
                                     <li><a href="#buscas">Formulários de Busca</a></li>
                                     <li><a href="#tabelas">Tabelas</a></li>
                                     <li><a href="#listas">Listas</a></li>
@@ -427,6 +484,30 @@
             <span id="fim-da-pagina"></span>
         </footer>
     </div> -->
+     <button id="back-to-top" onclick="scrollToTop()">↑</button>
+     <script>
+        function mudaNota() {
+            const nota = document.getElementById('nota').value;
+            document.getElementById('nota-atual').innerText = nota;
+            }
+
+        document.getElementById('nota').addEventListener('input', mudaNota);
+        mudaNota();
+        
+        const backToTopButton = document.getElementById("back-to-top");
+        if (scrollY > 300) {
+            backToTopButton.style.display = "flex";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth' // rolagem suave
+      });
+    }
+     </script>
 </body>
 
 </html>
