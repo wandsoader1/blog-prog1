@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog do ADS</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="imagens/ads.png" type="image/x-icon">
 </head>
 
 <body>
@@ -16,19 +16,18 @@
                 <div class="header_nav_logo">
                     <a href="#"><img src="./imagens/ads.png" alt="ads logo"></a>
                 </div>
-                <!-- <h2>Blog do ADS</h2> -->
                 <div class="header_nav_links">
                     <a href="#">Home</a>
-                    <a href="#">Sobre</a>
+                    <a href="https://shre.ink/aboutBlog" target="_blank">Sobre</a>
                     <a href="#">Contato</a>
-                    <a id="login_link" href="#">Login</a>
-                    <a id="create_acount_link" href="#">Criar Conta</a>
+                    <a id="login_link" href="https://shre.ink/loginBlog" target="_blank">Login</a>
+                    <a id="create_acount_link" href="https://shre.ink/createAcountBlog" target="_blank">Criar Conta</a>
                 </div>
             </nav>
         </header>
         <div class="flex_leiaut_container">
             <div class="flex_capa">
-                <h2> caules Blog</h2>
+                <h2> Blog do ADS</h2>
             </div>
             <div class="flex_leiaut">
                 <main>
@@ -73,9 +72,6 @@
                             <label for="hora">Hora:</label>
                             <input type="time" id="hora" name="hora" required>
                             <br>
-                            <label for="busca">Busca:</label>
-                            <input type="search" id="busca" name="busca" placeholder="Digite sua pesquisa" required>
-                            <br>
                             <label for="nota">Nota (0 a 10):</label>
                             <input type="range" id="nota" name="nota" min="0" max="10" value="5" required>
                             <div id="nota-atual">5</div>
@@ -91,18 +87,9 @@
                             <figcaption>Exemplo de formulário com campos modernos (Fonte: MDN Web Docs)</figcaption>
                         </figure>
 
-                        <script>
-                            function mudaNota() {
-                                const nota = document.getElementById('nota').value;
-                                document.getElementById('nota-atual').innerText = nota;
-                            }
-
-                            document.getElementById('nota').addEventListener('input', mudaNota);
-                            mudaNota();
-                        </script>
                     </article>
                     <article id="buscas">
-                        <h2>Formulário clássicos de busca</h2>
+                        <h3>Formulário clássicos de busca</h3>
                         <p class="autor_data">07/04/2025 - por Ely Miranda</p>
                         <p>Busca no google</p>
                         <form action="http://www.google.com/search" method="get">
@@ -134,7 +121,7 @@
                         </form>
                     </article>
                     <article id="tabelas">
-                        <h2>Tabelas</h2>
+                        <h3>Tabelas</h3>
                         <p class="autor_data">07/04/2025 - por Ely Miranda</p>
                         <p>Uma tabela é uma coleção de dados organizados em linhas e colunas.</p>
                         <p>Uma tabela pode ter um cabeçalho, um corpo e um rodapé.</p>
@@ -167,7 +154,7 @@
                         </table>
 
                         <p>Uma tabela simples como a anterior, porém com mais dados e linhas zebradas</p>
-                        <table class="tabela-1">
+                        <table class="tabela-2">
                             <tr>
                                 <th>Nome</th>
                                 <th>Idade</th>
@@ -196,7 +183,7 @@
                         </table>
 
                         <p>Tabela zebrada, com cabeçalho e colunas e linhas expandidas</p>
-                        <table class="tabela-1">
+                        <table class="tabela-3">
 
                             <tr>
                                 <th>Nome</th>
@@ -225,7 +212,7 @@
                         </table>
                     </article>
                     <article id="listas">
-                        <h2>Lista de Links</h2>
+                        <h3>Lista de Links</h3>
                         <p class="autor_data">07/04/2025 - por Ely Miranda</p>
                         <ul class="lista-de-links">
                             <li><a href="https://www.google.com.br">Google</a></li>
@@ -237,27 +224,29 @@
                                 </a>
                             </li>
                         </ul>
-
-                        <h2>Listas</h2>
+                        <br>
+                        <h3>Listas</h3>
                         <p>Listas não ordenadas</p>
                         <ul class="lista-nao-ordenada">
                             <li>Maçã
                             <li>Laranja
                             <li>Banana
                         </ul>
-
+                        <br>
                         <p>Listas ordenadas</p>
                         <ol class="lista-ordenada">
                             <li>Organizar tasks
                             <li>Passar no supercado
                             <li>Vir ao IFPI
                         </ol>
+                        <br>
                         <p>Listas com imagens</p>
                         <ul class="lista-com-imagens">
                             <li>Maçã
                             <li>Laranja
                             <li>Banana
                         </ul>
+                        <br>
                         <dl>
                             <dt>Definição de lista</dt>
                             <dd>Uma lista é uma coleção de itens.</dd>
@@ -266,8 +255,9 @@
                             <dt>Definição de lista ordenada</dt>
                             <dd>Uma lista ordenada é uma coleção de itens com ordem específica.</dd>
                         </dl>
+                        <br>
                         <p>Listas aninhadas</p>
-                        <ul>
+                        <ul class="lista-aninhada">
                             <li>Maçã
                                 <ul>
                                     <li>Verde</li>
@@ -290,7 +280,7 @@
 
                     </article>
                     <article id="espacamentos">
-                        <h2>Alinhamentos</h2>
+                        <h3>Alinhamentos</h3>
                         <p class="autor_data">07/04/2025 - por Ely Miranda</p>
                         <p class="justificado">Justificado - Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                             Delectus
@@ -314,9 +304,8 @@
                             iusto
                             quos.
                         </p>
-
-                        <h2>Espaçamentos</h2>
-                        <!-- <p class="autor_data">07/04/2025 - por Ely Miranda</p> -->
+                        <br>
+                        <h3>Espaçamentos</h3>
                         <p class="entre-linhas">Espaçamento entre linhas de 2.0: Lorem ipsum dolor sit amet consectetur,
                             adipisicing
                             elit. Delectus amet accusamus placeat perspiciatis, id libero doloremque quos dolor aliquam
@@ -335,6 +324,7 @@
                             sunt
                             doloribus
                             reprehenderit iusto quos.</p>
+                        <br>
                         <p class="entre-letras">Espaçamento entre letras de 2.0: adipisci consequatur, quasi quae quam
                             quas
                             non
@@ -353,9 +343,92 @@
                             maxime
                             nam, fuga similique! Inventore sunt doloribus reprehenderit iusto quos.</p>
                     </article>
+                    <article id="fontes">
+                        <h3>Fontes</h3>
+                        <p class="autor_data">07/04/2025 - por Ely Miranda</p>
+                        <p>Algumas fontes:</p>
+                        <p class="times">times - Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor
+                            debitis,
+                            veritatis
+                            ex
+                            facere dolorem vitae id magni mollitia dolores, doloribus eligendi nobis reiciendis unde
+                            alias
+                            voluptas
+                            consequuntur consequatur, quo provident!</p>
+                        <br>
+                        <p>arial (configurada na definição body no CSS) - Lorem, ipsum dolor sit amet consectetur
+                            adipisicing
+                            elit.
+                            Consectetur praesentium doloribus architecto aperiam harum? Optio iste laudantium tenetur,
+                            consectetur
+                            blanditiis soluta quia qui mollitia nisi saepe unde iusto numquam consequuntur.</p>
+                        <br>
+                        <p class="verdana">verdana - Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+                            possimus
+                            aspernatur quaerat dignissimos eos debitis sit vitae, exercitationem earum quod et
+                            consequuntur
+                            nihil
+                            quasi
+                            molestias perspiciatis fuga. Atque, mollitia placeat!</p>
+                        <br>
+                        <p class="playwrite">playwrite - Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Deleniti
+                            officiis
+                            quibusdam delectus maxime, sint consectetur soluta possimus porro incidunt necessitatibus,
+                            in
+                            recusandae
+                            sunt quisquam dignissimos consequatur. Sit mollitia animi enim.</p>
+                        <br>
+                        <p class="monospace">Monoespaçadas - asdfghjklç</p>
+                        <p class="monospace">Monoespaçadas - ~i909099OO</p>
+                    </article>
+                    <article id="cores">
+                        <h3>Cores</h3>
+                        <p class="autor_data">07/04/2025 - por Ely Miranda</p>
+                        <p class="vermelho">Texto vermelho</p>
+                        <p class="verde">Texto verde</p>
+                        <p class="azul">Texto azul</p>
+                        <p class="cinza-claro">Texto cinza claro</p>
+                        <p class="cinza-escuro">Texto cinzaescuro</p>
+                    </article>
+                    <article id="formatacao">
+
+                        <h3>Formatação de textos em CSS</h3>
+                        <p class="autor_data">07/04/2025 - por Ely Miranda</p>
+                        <p class="negrito">Um exemplo de texto em negrito</p>
+                        <p class="italico">Um exemplo de texto em itálico</p>
+                        <p class="sublinhado">Um exemplo de texto em >sublinhado</p>
+                    </article>
+                    <article id="simbolos">
+                        <h3>Símbolos</h3>
+                        <p class="autor_data">07/04/2025 - por Ely Miranda</p>
+                        <p>A tag &lt; html &gt; diz que o documento é HTML</p>
+                        <p>Símbolo do Euro: &euro;</p>
+                        <p>Símbolo do Iene: &yen;</p>
+                        <p>Copyright: &copy;</p>
+                        <p>Trade mark: &trade;</p>
+                        <p>Omega: &omega;</p>
+                        <p>Emojis: &#128578; </p>
+                    </article>
+                    <article id="ifpi">
+                        <h3>Sobre o IFPI</h3>
+                        <p class="autor_data">07/04/2025 - por Ely Miranda</p>
+                        <p>Esta é a logomarca do IFPI</p>
+                        <figure>
+                            <img src="https://www.ifpi.edu.br/topo_ifpi.png" alt="Logomarca do IFPI">
+                            <figcaption>Logomarca do IFPI</figcaption>
+                        </figure>
+                        <p><a href="http://www.ifpi.edu.br" target="_blank">Site do IFPI</a></p>
+                    </article>
+
+                    <article>
+                        <h2>Minha primeira postagem</h2>
+                        <p class="autor_data">07/04/2025 - por Ely Miranda</p>
+
+                        <p>Hello Wold! Esta é minha primeira postagem</p>
                 </main>
                 <aside>
-                    <h3>Sections</h3>
+                    <h3>Seções</h3>
                     <ul>
                         <li><a href="#boxmodel">Box Model</a></li>
                         <li><a href="#camposmodernos">Campos Modernos</a></li>
@@ -365,6 +438,7 @@
                         <li><a href="#espacamentos">Espaçamentos</a></li>
                         <li><a href="#fontes">Fontes</a></li>
                         <li><a href="#cores">Cores</a></li>
+                        <li><a href="#formatacao">Formatação</a></li>
                         <li><a href="#simbolos">Símbolos</a></li>
                         <li><a href="#ifpi">Sobre o IFPI</a></li>
                     </ul>
@@ -389,166 +463,8 @@
             <p>Blog do ADS &copy; 2025 | Criado por:</p>
             <p>Luiz David Silva Gomes</p>
             <p>Wanderson Matheus</p>
-        </footer>
-        <!-- <div id="leiaute-flex">
-
-                
-                
-                <article>
-                    <h2>Alinhamentos</h2>
-                    <p class="justificado">Justificado - Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                        Delectus
-                        amet
-                        accusamus placeat perspiciatis, id libero doloremque quos dolor aliquam adipisci consequatur,
-                        quasi
-                        quae
-                        quam quas non minima. Atque, cupiditate sit? Lorem ipsum dolor sit amet consectetur adipisicing
-                        elit.
-                        Repellat perferendis odio inventore cupiditate tempore placeat porro esse iste consequatur,
-                        quibusdam
-                        accusantium hic, architecto et debitis reiciendis non adipisci. Quo, sed! Lorem, ipsum dolor sit
-                        amet
-                        consectetur adipisicing elit. Perspiciatis, quam? Commodi illo ea laudantium asperiores,
-                        expedita
-                        explicabo
-                        vel officia incidunt maxime nam, fuga similique! Inventore sunt doloribus reprehenderit iusto
-                        quos.
-                    </p>
-                    <p class="autor-data">07/04/2025 - por Ely Miranda - à direita</p>
-
-                    <h2>Espaçamentos</h2>
-                    <p class="entre-linhas">Espaçamento entre linhas de 2.0: Lorem ipsum dolor sit amet consectetur,
-                        adipisicing
-                        elit. Delectus amet accusamus placeat perspiciatis, id libero doloremque quos dolor aliquam
-                        adipisci
-                        consequatur, quasi quae quam quas non minima. Atque, cupiditate sit? Lorem ipsum dolor sit amet
-                        consectetur
-                        adipisicing elit. Repellat perferendis odio inventore cupiditate tempore placeat porro esse iste
-                        consequatur, quibusdam accusantium hic, architecto et debitis reiciendis non adipisci. Quo, sed!
-                        Lorem,
-                        ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, quam? Commodi illo ea
-                        laudantium
-                        asperiores, expedita explicabo vel officia incidunt maxime nam, fuga similique! Inventore sunt
-                        doloribus
-                        reprehenderit iusto quos.</p>
-                    <p class="entre-letras">Espaçamento entre letras de 2.0: adipisci consequatur, quasi quae quam quas
-                        non
-                        minima.
-                        Atque, cupiditate sit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-                        perferendis
-                        odio
-                        inventore cupiditate tempore placeat porro esse iste consequatur, quibusdam accusantium hic,
-                        architecto
-                        et
-                        debitis reiciendis non adipisci. Quo, sed! Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit.
-                        Perspiciatis, quam? Commodi illo ea laudantium asperiores, expedita explicabo vel officia
-                        incidunt
-                        maxime
-                        nam, fuga similique! Inventore sunt doloribus reprehenderit iusto quos.</p>
-                    <p class="autor-data">07/04/2025 - por Ely Miranda - <a href="#inicio-pagina">&uarr;</a></p>
-                </article>
-                <article>
-
-                    <h2>Fontes</h2>
-                    <p>Algumas fontes:</p>
-                    <p class="times">times - Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor debitis,
-                        veritatis
-                        ex
-                        facere dolorem vitae id magni mollitia dolores, doloribus eligendi nobis reiciendis unde alias
-                        voluptas
-                        consequuntur consequatur, quo provident!</p>
-                    <p>arial (configurada na definição body no CSS) - Lorem, ipsum dolor sit amet consectetur
-                        adipisicing
-                        elit.
-                        Consectetur praesentium doloribus architecto aperiam harum? Optio iste laudantium tenetur,
-                        consectetur
-                        blanditiis soluta quia qui mollitia nisi saepe unde iusto numquam consequuntur.</p>
-                    <p class="verdana">verdana - Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-                        possimus
-                        aspernatur quaerat dignissimos eos debitis sit vitae, exercitationem earum quod et consequuntur
-                        nihil
-                        quasi
-                        molestias perspiciatis fuga. Atque, mollitia placeat!</p>
-                    <p class="playwrite">playwrite - Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-                        officiis
-                        quibusdam delectus maxime, sint consectetur soluta possimus porro incidunt necessitatibus, in
-                        recusandae
-                        sunt quisquam dignissimos consequatur. Sit mollitia animi enim.</p>
-                    <p class="monospace">Monoespaçadas - asdfghjklç</p>
-                    <p class="monospace">Monoespaçadas - ~i909099OO</p>
-                    <p class="autor-data">07/04/2025 - por Ely Miranda - <a href="#inicio-pagina">&uarr;</a></p>
-                </article>
-                <article>
-                    <h2>Cores</h2>
-                    <p class="vermelho">Texto vermelho</p>
-                    <p class="verde">Texto verde</p>
-                    <p class="azul">Texto azul</p>
-                    <p class="cinza-claro">Texto cinza claro</p>
-                    <p class="cinza-escuro">Texto cinzaescuro</p>
-                    <p class="autor-data">07/04/2025 - por Ely Miranda - <a href="#inicio-pagina">&uarr;</a></p>
-                </article>
-                <article>
-
-                    <h2>Formatação de textos em CSS</h2>
-                    <p class="negrito">Um exemplo de texto em negrito</p>
-                    <p class="italico">Um exemplo de texto em itálico</p>
-                    <p class="sublinhado">Um exemplo de texto em >sublinhado</p>
-                    <p class="autor-data">07/04/2025 - por Ely Miranda - <a href="#inicio-pagina">&uarr;</a></p>
-                </article>
-                <article>
-                    <h2>Símbolos</h2>
-                    <p>A tag &lt; html &gt; diz que o documento é HTML</p>
-                    <p>Símbolo do Euro: &euro;</p>
-                    <p>Símbolo do Iene: &yen;</p>
-                    <p>Copyright: &copy;</p>
-                    <p>Trade mark: &trade;</p>
-                    <p>Omega: &omega;</p>
-                    <p>Emojis: &#128578; </p>
-                    <p class="autor-data">07/04/2025 - por Ely Miranda - <a href="#inicio-pagina">&uarr;</a></p>
-                </article>
-                <article id="ifpi">
-                    <h2>Sobre o IFPI</h2>
-                    <p>Esta é a logomarca do IFPI</p>
-                    <img src="https://www.ifpi.edu.br/topo_ifpi.png" alt="Logomarca do IFPI">
-                    <p><a href="http://www.ifpi.edu.br" target="_blank">Site do IFPI</a></p>
-                    <p class="autor-data">07/04/2025 - por Ely Miranda - <a href="#inicio-pagina">&uarr;</a></p>
-                </article>
-                <article>
-                    <h2>Formatação de textos</h2>
-
-                    <p>Um exemplo de texto em <strong>negrito</strong></p>
-                    <p>Um exemplo de texto em <em>itálico</em></p>
-                    <p>Um exemplo de texto em <u>sublinhado</u></p>
-                    <p class="autor-data">07/04/2025 - por Ely Miranda - <a href="#inicio-pagina">&uarr;</a></p>
-                </article>
-
-                <article>
-                    <h2>Minha primeira postagem</h2>
-
-                    <p>Hello Wold! Esta é minha primeira postagem</p>
-                    <p class="autor-data">07/04/2025 - por Ely Miranda - <a href="#inicio-pagina">&uarr;</a></p>
-                </article>
-            </main>
-            <aside>
-                <ul>
-                    <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">HTML no MDN</a></li>
-                    <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank">CSS no MDN</a></li>
-                    <li><a href="https://www.w3schools.com/html/" target="_blank">Tutorial HTML - W3Schools</a></li>
-                    <li><a href="https://www.w3schools.com/css/" target="_blank">Tutorial CSS - W3Schools</a></li>
-                    <li><a href="https://web.dev/" target="_blank">Boas práticas Web.dev</a></li>
-                    <li><a href="https://css-tricks.com/snippets/css/" target="_blank">CSS Tricks (snippets)</a></li>
-                    <li><a href="https://caniuse.com/" target="_blank">Can I use?</a></li>
-                </ul>
-            </aside>
-        </div>
-        <footer>
-            <p>Blog do ADS</p>
-            <p>Contato: <a href="mailto:ads@gmail.com">ads@gmail.com</a></p>
-            <p>Todos os direitos reservados &copy;</p>
             <span id="fim-da-pagina"></span>
         </footer>
-    </div> -->
         <button id="back-to-top" onclick="scrollToTop()">↑</button>
         <script>
             function mudaNota() {
@@ -559,19 +475,24 @@
             document.getElementById('nota').addEventListener('input', mudaNota);
             mudaNota();
 
-            // const backToTopButton = document.getElementById("back-to-top");
-            // if (scrollY >= 200) {
-            //     backToTopButton.style.display = "flex";
-            // } else {
-            //     backToTopButton.style.display = "none";
-            // }
+            const backToTopButton = document.getElementById("back-to-top");
 
-            // function scrollToTop() {
-            //     window.scrollTo({
-            //         top: 0,
-            //         behavior: 'smooth' // rolagem suave
-            //     });
-            // }
+            window.addEventListener("scroll", () => {
+                if (window.scrollY > 700) {
+                    backToTopButton.style.display = "flex";
+                } else {
+                    backToTopButton.style.display = "none";
+                }
+            });
+
+            function scrollToTop() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            }
+
+            backToTopButton.addEventListener("click", scrollToTop);
         </script>
 </body>
 
